@@ -1,0 +1,31 @@
+<input type="button" id="basicFetchButton" value="Try it">
+<textarea rows="10" cols="50" name="response">
+No REST calls yet
+</textarea>
+<script>
+    document.getElementById("basicFetchButton").addEventListener("click", function(){
+        theResponse = "Sending REST API Request. No Response";
+//        var data = new FormData();
+//        data.append("user_email", "funcky_funcky@hotmail.com");
+//        data.append("password", "BI11**er");
+//        console.log(data);
+        var data = JSON.stringify({"user_email":"funcky_funcky@hotmail.com","password":"BI11**er","remember_me":false});
+        // Loading the jQuery code
+        fetch("https://api.frink.global/login", {
+            method: 'post',
+            body: data,
+            cache: "no-cache",
+            contentType: "application/json"
+        })
+            .then(httpResponse => { console.log(httpResponse);});
+
+        /*            .then(function (response) {
+         response.text().then(function (responseText) {
+         theResponse = responseText;
+         console.log(responseText);
+         alert("Login Response: " + responseText);
+         });
+         });
+         */
+    });
+</script>

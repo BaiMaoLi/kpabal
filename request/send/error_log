@@ -1,0 +1,49 @@
+[17-Sep-2018 19:39:54 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/track_config.php on line 7
+[17-Sep-2018 19:40:27 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/track_config.php on line 7
+[17-Sep-2018 19:47:03 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/track_config.php on line 7
+[17-Sep-2018 19:47:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home1/kpabalco/public_html/request/send/getusers.php:72
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 72
+[17-Sep-2018 19:48:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home1/kpabalco/public_html/request/send/getusers.php:72
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 72
+[17-Sep-2018 19:54:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home1/kpabalco/public_html/request/send/getusers.php:77
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 77
+[17-Sep-2018 19:56:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home1/kpabalco/public_html/request/send/getusers.php:77
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 77
+[17-Sep-2018 19:56:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home1/kpabalco/public_html/request/send/getusers.php:77
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 77
+[17-Sep-2018 19:56:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home1/kpabalco/public_html/request/send/getusers.php:77
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 77
+[17-Sep-2018 19:56:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home1/kpabalco/public_html/request/send/getusers.php:77
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 77
+[17-Sep-2018 19:57:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home1/kpabalco/public_html/request/send/getusers.php:77
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 77
+[17-Sep-2018 20:01:49 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/track_config.php on line 7
+[17-Sep-2018 20:08:19 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/db_connect.php on line 29
+[17-Sep-2018 20:08:19 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/db_connect.php on line 29
+[17-Sep-2018 20:08:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home1/kpabalco/public_html/request/send/getusers.php:38
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 38
+[17-Sep-2018 20:16:09 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/track_config.php on line 7
+[18-Sep-2018 00:15:22 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/db_connect.php on line 29
+[18-Sep-2018 00:15:22 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michale900'@'cs8.bluehost.com' (using password: YES) in /home1/kpabalco/public_html/request/send/db_connect.php on line 29
+[18-Sep-2018 00:15:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home1/kpabalco/public_html/request/send/getusers.php:38
+Stack trace:
+#0 {main}
+  thrown in /home1/kpabalco/public_html/request/send/getusers.php on line 38

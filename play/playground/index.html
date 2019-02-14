@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html class="js">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.0.5">
+        <link rel="shortcut icon" href="img/favicon.jpg">
+        <title>TecAlliance TecDoc playground</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="library/jstree/themes/default/style.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/roboto.css">
+        <link rel="stylesheet" href="../assets/stylesheets/icon-material.css">
+        <link rel="stylesheet" type="text/css" href="css/all9899.css">
+        <style>
+            .description .automehanika_logo{
+                display: none;
+            }
+            @media only screen and (max-width: 767px) {
+                .leftside .automehanika_logo{
+                    display: none;
+                }
+                .description .automehanika_logo{
+                    display: block;
+                }
+            }
+        </style>
+ 
+        </head>
+        <body>
+       
+
+        
+      	<!-- dodao      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>dodao ja -->
+    	<!--<script src="https://webservice.tecalliance.services/pegasus-3-0/services/TecdocToCatDLB.jsonEndpoint?js"></script>-->
+        <script src="js/TecdocToCatDLB.jsonEndpoint.js"></script>
+       <!-- dodao     dodao ja -->
+        <!--<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">-->
+          <!--<input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">-->
+          <!--<label class="md-overlay" data-md-component="overlay" for="drawer"></label>-->
+          <!--<header class="md-header">-->
+              <!--<nav class="md-header-nav md-grid">-->
+                  <!--<div class="md-flex">-->
+                  <!---->
+                      <!--<div class="md-flex__cell md-flex__cell&#45;&#45;stretch">-->
+                          <!--<ul class="nav-links">-->
+                            <!---->
+                              <!--<li class="active"><a href="javascript:void(0);" class="playground">Playground</a></li>-->
+                              <!--<li></li>-->
+                          <!--</ul>-->
+                      <!--</div>-->
+
+                  <!--</div>-->
+              <!--</nav>-->
+          <!--</header>-->
+          <!--<div class="hidden" style="display: none;">-->
+              <!--<div class="md-sidebar md-sidebar&#45;&#45;primary" data-md-component="navigation" style="display: none;" data-md-state="lock">-->
+                  <!--<div class="md-sidebar__scrollwrap">-->
+                      <!--<div class="md-sidebar__inner">-->
+                          <!--<nav class="md-nav md-nav&#45;&#45;primary">-->
+                              <!--<label class="md-nav__title md-nav__title&#45;&#45;site" for="drawer"><i class=" md-logo  md-nav__button"><img src="../images/tecalliance_logo_250px.jpg"></i></label>-->
+                              <!--<ul class="md-nav__list" data-md-scrollfix="">-->
+                                  <!--<li class="md-nav__item"><input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc"><a href=".html" title="Index" class="md-nav__link md-nav__link&#45;&#45;active">Index</a></li>-->
+                              <!--</ul>-->
+                          <!--</nav>-->
+                      <!--</div>-->
+                  <!--</div>-->
+              <!--</div>-->
+              <!--<div data-md-component="toc"></div>-->
+          <!--</div>-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 column_left">
+                    <h2 class="column_title">Kriterijum pretrage</h2>
+                
+                  <div class="vehicle_selection">
+                        <h2>Izaberite vozilo</h2>
+                        <select class="manufacturers" disabled>
+                            <option value="">- Izaberite marku -</option>
+                        </select><span></span>
+                        <select class="modell" disabled>
+                            <option value="">- Izaberite model -</option>
+                        </select><span></span>
+                        <select class="vehicle" disabled>
+                            <option value="">- Izaberite tip -</option>
+                        </select><span></span>
+                    </div>
+                
+                <div class="vin">
+                        <h2>VIN (BROJ &#352;ASIJE)</h2>
+                        <input type="text" name="vin" class="search" value=""><button class="su">Tra&#382;i</button>
+                    </div> 
+                
+                    <div class="search">
+                        <h2>Katalo&#353;ki broj</h2>
+                        <input type="text" name="search" class="search" value=""><button class="su">Tra&#382;i</button>
+                        <select class="numberType">
+                            <option value="0">Broj artikla</option>
+                            <option value="1">OE broj</option>
+                            <option value="2">Trgova&#269;ki broj</option>
+                            <option value="3">Uporedni broj</option>
+                            <option value="4">Zamenski broj</option>
+                            <option value="5">Zamenjen broj</option>
+                            <option value="6">EAN broj</option>
+                            <option value="10" selected>Bilo koji broj</option>
+                        </select>
+                    </div>
+                   
+                   
+                    <div class="hsn_tsn" style="display:none">
+                        <h2>Search by KBA-Nr.</h2>
+                        <table>
+                            <tr>
+                                <td>zu 2.1 / zu 2</td>
+                                <td>zu 2.2 / zu 3</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="hsn" class="hsn" maxlength="4"></td>
+                                <td><input type="text" name="hsn" class="tsn" maxlength="3"></td>
+                                <td><button>Send</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="brand_selection">
+                        <h2>Proizvo&#273;a&#269; autodela</h2>
+                        <select class="brands" disabled>
+                            <option value="">- Izaberite brend -</option>
+                        </select><span></span>
+                    </div>
+                    <div class="assemblyGroup">
+                        <h2>Grupa delova</h2>
+                        <div class="tree">
+                            <span class="loading"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5 column_middle">
+                    <div class="totalnumber"></div>
+                    <h2 class="column_title">Rezultati pretrage</h2>
+                    <div class="result"><div class="alert alert-warning" role="alert">Molimo izaberite opciju sa leve strane!</div></div>
+                </div>
+              
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="modal_tecdoc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Povezana vozila</h4>
+                  </div>
+                  <div class="modal-body">
+                    <span class="load"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer style="height:65px;">
+           <div class="md-typeset index" style="height:65px;overflow:hidden">
+             <div class="md-footer-meta__inner md-grid">
+               <div class="md-footer-translate md-footer-translate-left">
+                 <ul>
+                  
+                  
+                 </ul>
+               </div>
+               <div class="md-footer-copyright md-footer-copyright-right"></div>
+             </div>
+           </div>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="library/jstree/jstree.min.js"></script>
+ 		<script src="js/allc42a.js"></script> 
+      <!--  <script type="text/javascript" src="js/allc42a.php"></script>  -->
+    </body>
+
+
+</html>

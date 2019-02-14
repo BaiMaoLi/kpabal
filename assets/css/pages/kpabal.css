@@ -1,0 +1,197 @@
+      .breadcrumb-item + .breadcrumb-item::before {
+          content: "|";
+      }
+      .drama-item + .breadcrumb-item::before {
+          content: "|";
+      }
+      .breadcrumb-item + .drama-item::before {
+          content: "|";
+      }
+      .breadcrumb-item .drama-item{
+        color: black;
+      }
+      .breadcrumb-item:hover {
+          color: blue;
+          cursor: pointer;
+      }
+      .container {
+        padding-left: 0!important;
+      }
+      #main_pan{
+        padding-bottom: 50px;
+
+      }
+      #main_pan .pos{
+        position: static;
+        
+      }
+      .drama-item:hover {
+          color: blue;
+          cursor: pointer;
+      }
+      .video-card-image{
+        border-radius: 8px;
+      }
+      .video-card-body{
+        padding-top: 10px;
+        transition: .5s;
+        text-align: center;
+      }
+      
+      .video-card-body:hover{
+        border-radius: 8px;
+        background-color: rgba(100,100,100,.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(10,10,10, 0.19);
+          text-align: center;
+          padding: 0px,0px,0px,0px;
+      }
+      #video-title{
+        text-align: center;
+        line-height: 60px;
+          color: white;
+          text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+          animation-name: video-titile-frame;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+      }
+      a{
+        color: black;
+      }
+      a:hover{
+        color:blue;
+      }
+      #owl-demo{
+        min-width: 400px !important;
+        width: 100% !important;
+        margin: 0 0 0 0!important;
+      }
+
+      #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .owl-demo-style .item{
+        margin: 3px;
+      }
+      .owl-demo-style .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .owl-demo1{
+        height: 200px;
+        margin-bottom: 20px;
+      }
+
+      .owl-demo1 .item{
+        width: 250px !important;
+      }
+
+      .owl-demo1 .video-rect{
+        width: 100% !important;
+        height: 150px !important;
+      }
+
+      .owl-demo1 h6.title{
+        color: rgb(104, 8, 119);
+        text-align: center;
+      }
+
+      .center {
+          margin: auto;
+          width: 60%;
+          padding: 10px;
+      }
+      .own-page span{
+        display: none !important;
+      }
+
+      .landing-main{
+        margin: auto;
+        width: 100%;
+      }
+
+      .landing-main .video-rect{
+
+      }
+
+      .landing-main .title{
+        color: rgb(40, 35, 40);
+        font-size: 22px;
+        font-weight: 300;
+      }
+
+      .truncated{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+      }
+
+      .category-prefix{
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        color: rgb(108, 3, 112);
+      }
+
+      .category-title{
+        color: #555;
+        font-size: 24px;
+      }
+
+.video-region{
+  margin:0 0 0 0;
+  width: 120%;
+  position: relative;
+  right: 0;
+}
+
+.preloader-con{
+    position: fixed;
+    opacity:0.6;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+.sel-sub-cate{
+    position:absolute;
+    right:2%;
+    top: 15%;
+    width: 100px;
+}
+
+.bread-sub-cate{
+    height: auto; 
+    position: relative !important; 
+    padding: 0.75rem 1rem !important; 
+    margin: 0 0 1rem 0 !important; 
+    background-color: #e9ecef !important;
+}
+
+@media screen and (max-width: 470px){
+    .sel-sub-cate{
+        position: absolute;
+        right: 15px;
+        top: 40px;
+        /*margin-left: 20px;*/
+        /*float: right;*/
+    }
+    
+    .bread-sub-cate{
+        height: 100px; 
+        position: relative !important; 
+        padding: 0.75rem 1rem !important; 
+        margin: 0 0 1rem 0 !important; 
+        background-color: #e9ecef !important;
+    }
+    
+}
+      
+      
+      
+      
+      

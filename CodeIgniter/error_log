@@ -1,0 +1,4 @@
+[25-Jul-2018 23:08:25 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home1/kpabalco/public_html/CodeIgniter/application/controllers/Job.php on line 6
+[25-Jul-2018 23:09:10 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home1/kpabalco/public_html/CodeIgniter/application/controllers/Job.php on line 6
+[25-Jul-2018 23:09:13 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home1/kpabalco/public_html/CodeIgniter/application/controllers/Job.php on line 6
+[25-Jul-2018 23:09:31 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home1/kpabalco/public_html/CodeIgniter/application/controllers/Job.php on line 6

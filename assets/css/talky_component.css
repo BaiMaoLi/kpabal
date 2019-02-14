@@ -1,0 +1,305 @@
+/* Grid style */
+.grid-gallery {position:relative; width:100%;}
+.grid-wrap {max-width:88%; margin:0 auto;}
+
+.grid {margin:0 auto;}
+.grid li {width:19%; float:left; cursor:pointer; padding:10px;}
+.grid li .wrap {outline:1px solid #ddd; background:#fff;}
+.grid li .wrap:hover {outline:7px solid #da5a9e;}
+
+.grid li .wrap figure .image {min-height:5px;}
+.grid li .wrap figure img {display:block; width:100%; height:auto; }
+.grid li:hover .wrap figure img {opacity:0.7;}
+
+.grid li .wrap figure figcaption {margin:15px 15px 5px 15px; border-bottom:1px solid #eee;}
+.grid li .wrap figure figcaption h3 {font-weight:normal; color:#333; line-height:120%; font-size:18px;}
+.grid li .wrap figure figcaption p {margin-top:5px; margin-bottom:20px; color:#888; font-size:13px; line-height:150%; letter-spacing:-0.03em;}
+.grid li .wrap figure figcaption .writer {display:inline-block; width:auto; margin:0 0 10px 0; padding:2px 10px; border:1px solid #eaeaea; border-radius:20px; font-size:12px; letter-spacing:-0.03em; color:#aeaeae;}
+
+.grid li .wrap .share {position:relative; width:30px; height:23px; margin-left:15px; background:url(http://img.koreatimes.com/talk/images/icon_share_view.png) no-repeat left 1px; background-size:13px 16px;}
+.grid li .wrap .share .show_share {display:none;}
+.grid li .wrap .share .close_share {display:none;}
+.grid li .wrap .share a {display:none;}
+.grid li .wrap .share a img {display:none; width:33px; height:auto;} /*share부분 이미지삭제후 제거하기:배경이미지로처리예정*/
+.grid li .wrap .share:hover {width:170px;}
+.grid li .wrap .share:hover a {display:block; position:absolute; top:0; width:33px; height:33px; margin-top:-13px; font-size:0;}
+.grid li .wrap .share a.send_fb {left:0; background:url(http://img.koreatimes.com/talk/images/sns_fb.png) no-repeat center top;}
+.grid li .wrap .share a.send_tw {left:33px; background:url(http://img.koreatimes.com/talk/images/sns_tw.png) no-repeat center top;}
+.grid li .wrap .share a.send_gg {left:66px; background:url(http://img.koreatimes.com/talk/images/sns_gg.png) no-repeat center top;}
+.grid li .wrap .share a.send_ka {}
+
+.grid li .wrap .user {float:right; margin-right:15px; font-size:14px; margin-top:-24px;}
+.grid li .wrap .user a {color:#999;}
+.grid li .wrap .user .view {float:left; padding-left:25px; background:url(http://img.koreatimes.com/talk/images/icon_view.png) no-repeat left 2px;}
+.grid li .wrap .user .comment {float:left; margin-left:12px; padding-left:25px; background:url(http://img.koreatimes.com/talk/images/icon_comment.png) no-repeat left 2px;}
+.grid li .wrap .user .like {float:left; height:20px; margin-left:12px; padding-left:22px; background:url(http://img.koreatimes.com/talk/images/icon_like.png) no-repeat left 2px;}
+.grid li .wrap .user .like.active {background-position:-60px 2px;}
+
+.grid li .wrap.active {outline:7px solid #2589dd;}
+.grid li .wrap.active .post_edit {float:right; margin:-70px 15px 0 0; height:25px; text-transform:uppercase; font-weight:bold; line-height:150%;}
+.grid li .wrap.active .post_edit a {color:#2589dd;}
+.grid li .wrap.active .post_edit .label_my_post {position:absolute; top:-35px; right:-25px; z-index:120;}
+
+@media screen and (max-width: 1440px) {
+    .posting, .editbox {margin-left:-32%;}
+
+}
+@media screen and (max-width: 1280px) {
+    .grid li {width:23%;}
+    .grid-wrap {max-width:95%;}
+
+    .grid-weekly .list>.item {width:25%;}
+    .grid-weekly .wrap {max-width:95%;}
+
+    .header .top {width:95%;}
+    .header .btn_posting {width:120px; top:293px;}
+    .header .btn_posting.active {width:240px;}
+    .header .detail_btn_posting {width:40px;}
+    .search {width:45%; margin-left:-27%;}
+
+    .posting, .editbox {margin-left:-36%;}
+
+    .detail .viewbox .photo .photoimage img {max-width:460px;}
+    .detail .viewbox .txt .review_list li .review_txt .btn_comment{width:55px;}
+
+    .preview .prebox {min-height:500px;}
+    .preview .prebox .photo {width:100%; max-height:300px; min-height:250px;}
+    .preview .prebox .txt_area {width:100%; height:200px; text-align:center;}
+    .preview .prebox .photo .photoimage img {max-height:300px;}
+
+    .preview .prebox .txt p {max-height:80px;}
+}
+
+@media screen and (max-width: 1024px) {
+    .grid li {width:31%;}
+    .grid-wrap {max-width:95%;}
+
+    .grid-weekly .list>.item {width:33%;}
+    .header {height:60px}
+    .header .top #logo {margin-top:10px;}
+    .header .top #logo img {width:70%; height:auto;}
+    .header .btn_posting {width:100px; top:307px;}
+    .header .btn_posting.active {width:200px;}
+    .header .detail_btn_posting {width:40px; height:40px; margin:10px 0px 0 0; background-size:40px 40px; background-position:center 0px;}
+
+
+    .detail {margin-top:50px; padding:35px 0 35px 0;}
+    .detail .viewbox {width:100%; padding:0 27px;}
+    .detail .viewbox .photo {float:none; width:100%; min-height:200px;}
+    .detail .viewbox .photo .photoimage img {max-height:550px; width:100%; max-width:340px;}
+    .detail .viewbox .txt {float:none; width:100%; text-align:center;}
+    .detail .viewbox .txt h3 {width:100%; margin-top:25px;}
+    .detail .viewbox .txt p {width:100%;}
+    .detail .viewbox .txt .user_act {display:inline-block; margin-top:50px; font-size:0;}
+    .detail .viewbox .txt .user_act .share {display:inline-block; float:none;}
+    .detail .viewbox .txt .user_act .user {display:inline-block; float:none;}
+    .detail .viewbox .txt .user_act .user_post {display:inline-block; float:none;}
+    .detail .viewbox .txt .review_form .set_review textarea {width:85%;}
+    .detail .viewbox .txt .review_list li .review_txt .btn_comment{width:55px;}
+    .preview .prebox {min-height:470px;}
+    .preview .prebox .photo {width:100%;}
+    .signIn {top:30%;}
+    .signUp{top:30%; margin-left:-170px;}
+    .profile_form{top:30%; margin-left:-170px;}
+}
+
+@media screen and (max-width: 800px) {
+    .grid-wrap {max-width:95%;}
+    .grid li {width:42%; padding:8px;}
+    .grid li .wrap figure figcaption {margin:10px 10px 10px 10px;}
+    .grid li .wrap figure figcaption h3 {font-size:20px;}
+    .grid li .wrap figure figcaption p {font-size:15px;}
+    .grid li .wrap .share {height:27px; margin-left:10px; background:url(http://img.koreatimes.com/talk/images/icon_shareB.png) no-repeat left 1px; background-size:12px 15px;}
+    .grid li .wrap .share:hover a {width:45px; height:45px; margin-top:-55px;}
+    .grid li .wrap .share a.send_fb {left:0; background:url(http://img.koreatimes.com/talk/images/sns_fbB.png) no-repeat center top; background-size:45px 45px;}
+    .grid li .wrap .share a.send_tw {left:45px; background:url(http://img.koreatimes.com/talk/images/sns_twB.png) no-repeat center top; background-size:45px 45px;}
+    .grid li .wrap .share a.send_gg {left:90px; background:url(http://img.koreatimes.com/talk/images/sns_ggB.png) no-repeat center top; background-size:45px 45px;}
+    .grid li .wrap .user {float:right; margin-right:10px; font-size:14px; margin-top:-27px;}
+    .grid li .wrap .user .comment {background:url(http://img.koreatimes.com/talk/images/icon_commentB.png) no-repeat left 1px; background-size:20px 18px;}
+    .grid li .wrap .user .like {background:url(http://img.koreatimes.com/talk/images/icon_likeB.png) no-repeat left 1px; background-size:18px 16px;}
+    .grid li .wrap .user .like.active {background:url(http://img.koreatimes.com/talk/images/icon_likeB_on.png) no-repeat left 1px; background-size:18px 16px;}
+
+    .grid-weekly {padding:25px 0 15px 0;}
+    .grid-weekly h2 {width:380px; background-size:110px 70px; font-size:30px;}
+    .grid-weekly .list>.item {width:50%; padding:8px; padding-top:0;}
+    .grid-weekly .image {background-size:60px 60px;}
+    .grid-weekly .image .weekly_name {padding:0.4em; font-size:21px;}
+
+    .tags {margin:0 8px 6px 8px; padding-top:380px;}
+    .tags h1 {font-size:28px;}
+
+
+
+
+    .search {top:7px;width: 100%; margin-left: 0; left: 0;}
+    .search .list_home {display:none; width:20%; max-width:32px; margin-top:8px; text-align:right;}
+    .search .list_home img {width:auto; height:27px;}
+    /*.search .select {position:absolute; top:0; right:90px; width:70%; height:35px; background-position:88% 15px;}*/
+    .search .sbSelector {width:87%; }
+    .search .sbOptions {width:100%; margin-top:0px;}
+    /*.search .input_style_search {*/
+        /*left:auto; right:90px; width:0; height:35px; font-size:13px; padding:0;*/
+        /*-moz-transition: all 0.3s ease-in;*/
+        /*-webkit-transition: all 0.3s ease-in;*/
+        /*-ms-transition: all 0.3s ease-in;*/
+    /*}*/
+    .top .btn-primary{margin-top:65px !important;right: 35%;}
+    #grid-gallery{margin-top: 50px;}
+    .search .input_style_search.active {width:90%; padding:0 6%;}
+    .posting{margin-left: 0;}
+    .info{padding:0;}
+    .detail {margin-top: 0 !important;}
+    /*.search .btn_search {right:50px;}*/
+    .search .btn_res_search {right:38px; background:url(http://img.koreatimes.com/talk/images/btn_search_m.png) no-repeat center 6px; background-size:24px 24px; margin-top:-1px;}
+
+
+
+    .btnBox .event{width:70%;}
+    #popup .lastObj {right:100px;}
+
+    .signIn {top:30%;}
+    .signUp{top:30%; margin-left: -170px;}
+    .profile_form{top:30%; margin-left: -170px;}
+    .preview .prebox {min-height:430px;}
+    .preview .prebox .photo {width:100%;}
+    .preview .prebox .photo .photoimage img {max-width:350px;}
+    .preview .btn_signIn,.preview .btn_signUp  {min-width:0; width:40%;}
+
+
+    .detail {margin-top:50px;}
+    .detail .viewbox .txt .user_act {margin-top:70px}
+    .detail .viewbox .txt .user_act .share a {width:40px; height:40px;}
+    .detail .viewbox .txt .user_act .share a.send_fb {background:url(http://img.koreatimes.com/talk/images/sns_fbB.png) no-repeat right top; background-size:40px 40px;}
+    .detail .viewbox .txt .user_act .share a.send_tw {background:url(http://img.koreatimes.com/talk/images/sns_twB.png) no-repeat center top; background-size:40px 40px;}
+    .detail .viewbox .txt .user_act .share a.send_gg {background:url(http://img.koreatimes.com/talk/images/sns_ggB.png) no-repeat center top; background-size:40px 40px;}
+    .detail .viewbox .txt .user_act .share a.send_ka {background:url(http://img.koreatimes.com/talk/images/sns_kaB.png) no-repeat center top; background-size:40px 40px;}
+    .detail .viewbox .txt .user_act .user {font-size:16px;}
+    .detail .viewbox .txt .user_act .user .like {height:50px; background:url(http://img.koreatimes.com/talk/images/icon_likeB.png) no-repeat 10px center; background-size:24px 22px;}
+    .detail .viewbox .txt .user_act .user .like.active {background:url(http://img.koreatimes.com/talk/images/icon_likeB_on.png) no-repeat 10px center; background-size:24px 22px;}
+    .detail .viewbox .txt .user_act .user_post .edit {height:50px; padding:4px 16px 0 12px; font-size:0;}
+    .detail .viewbox .txt .user_act .user_post .edit:after {font-size:25px;}
+    .detail .viewbox .txt .user_act .user_post .delete {height:50px; padding:4px 16px 0 12px; font-size:0;}
+    .detail .viewbox .txt .user_act .user_post .delete:after {font-size:25px;}
+    .detail .viewbox .txt .review_list li .review_txt {font-size:15px;}
+    .detail .viewbox .txt .review_form .set_review .btn_comment {font-size:0; background:url(http://img.koreatimes.com/talk/images/icon_comment_ok.png) no-repeat center center #2589dd; background-size:35px 24px;}
+    .detail .viewbox .txt .review_form .set_review textarea {width:79%;}
+
+}
+
+@media screen and (max-width: 640px) {
+    .header{margin-top: 0;}
+    .grid-wrap {max-width:95%;}
+    .grid li {width:42%; padding:2px 3px;}
+    .grid li .wrap:hover {outline:3px solid #8fc2ed;}
+    .grid li .wrap.active {outline:2px solid #2589dd;}
+    .grid li .wrap.active .post_edit {background:none; margin:-60px -60px 0 0;}
+
+    .grid li .wrap figure figcaption {margin:10px 10px 5px 10px;}
+    .grid li .wrap figure figcaption h3 {font-size:15px;}
+    .grid li .wrap figure figcaption p {font-size:12px;}
+
+    .grid li .wrap .share {height:22px; margin-left:10px;}
+    .grid li .wrap .share:hover a {width:35px; height:35px; margin-top:-40px;}
+    .grid li .wrap .share a.send_fb {left:0; background-size:35px 35px;}
+    .grid li .wrap .share a.send_tw {left:35px; background-size:35px 35px;}
+    .grid li .wrap .share a.send_gg {left:70px; background-size:35px 35px;}
+    .grid li .wrap .user {font-size:12px; margin-top:-22px; margin-right:10px;}
+    .grid li .wrap .user .comment {height:25px; padding-left:21px; background-size:17px 15px;}
+    .grid li .wrap .user .like {height:20px; padding-left:19px; background-size:16px 14px;}
+    .grid li .wrap .user .like.active {background-size:16px 14px;}
+
+
+    .grid-weekly {padding:15px 0 10px 0}
+    .grid-weekly h2 {width:100%; background-position:17% 10px; background-size:80px 51px; font-size:22px;}
+    .grid-weekly .list {margin-top:15px;}
+    .grid-weekly .list > .item {width:50%; padding:3px; padding-top:0;}
+    .grid-weekly .list, .grid-weekly .image {max-height:150px;}
+    .grid-weekly .image .weekly_name {font-size:14px;}
+
+    .tags {border-bottom:1px solid #ddd; margin:0 2px 10px 2px; padding-top:300px;}
+    .tags h1 {margin-bottom:10px; font-size:20px; display:block;}
+    .tags > li {margin-top:10px;}
+    .tags li:first-child {margin-bottom:5px;}
+    .tags>li>a {font-size:15px; padding:0.3em 0.7em;}
+
+    .btnBox .event{width:40%;}
+    #popup .lastObj {right:215px;}
+
+    .signIn {width:330px; top:35.5%;}
+    .signIn .info li input {width: 155px;}
+
+    .signUp{width:310px; top:25%; margin-left:-150px;}
+    .signUp .info li label {width:75px; font-size:12px;}
+    .signUp .info li input {width:145px;}
+
+    .profile_form{width:310px; top:25%; margin-left:-150px;}
+    .profile_form .info li label {width:75px; font-size:12px;}
+    .profile_form .info li input {width:145px;}
+
+
+    .preview h4 {font-size:30px;}
+    .preview .prebox .photo {width:100%; margin:0;}
+    .preview .prebox .photo .photoimage img {max-width:245px;}
+    .preview .prebox .txt_area {width:100%; text-align:center; height:0; padding-bottom:40px;}
+    .preview .close_popupB {width:50px!important; height:50px!important; top:-6px!important; right:-12px!important;}
+    .preview .close_popupB img {height:102%;}
+    .preview .btn_signIn,.preview .btn_signUp  {min-width:0; width:40%;}
+    .preview .prebox .txt p {max-height:100px;}
+
+    .detail {margin-top:50px; padding:35px 0 35px 0;}
+    .detail .viewbox {padding:0 3%;}
+    .detail .viewbox .txt h3 {margin-top:40px; font-size:24px;}
+    .detail .viewbox .txt .con {line-height:150%; font-size:14px;}
+    .detail .viewbox .txt .user_act .share a {width:35px; height:35px;}
+    .detail .viewbox .txt .user_act .share a.send_fb {background:url(http://img.koreatimes.com/talk/images/sns_fbB.png) no-repeat right top; background-size:35px 35px;}
+    .detail .viewbox .txt .user_act .share a.send_tw {background:url(http://img.koreatimes.com/talk/images/sns_twB.png) no-repeat center top; background-size:35px 35px;}
+    .detail .viewbox .txt .user_act .share a.send_gg {background:url(http://img.koreatimes.com/talk/images/sns_ggB.png) no-repeat center top; background-size:35px 35px;}
+    .detail .viewbox .txt .user_act .share a.send_ka {background:url(http://img.koreatimes.com/talk/images/sns_kaB.png) no-repeat center top; background-size:35px 35px;}
+
+    .detail .viewbox .txt .user_act .user {font-size:16px;}
+    .detail .viewbox .txt .user_act .user .like {height:45px; background:url(http://img.koreatimes.com/talk/images/icon_likeB.png) no-repeat 10px center; background-size:24px 22px;}
+    .detail .viewbox .txt .user_act .user .like.active {background:url(http://img.koreatimes.com/talk/images/icon_likeB_on.png) no-repeat 10px center; background-size:24px 22px;}
+    .detail .viewbox .txt .user_act .user_post .edit {height:45px; padding:4px 12px 0 7px; font-size:0;}
+    .detail .viewbox .txt .user_act .user_post .edit:after {font-size:25px;}
+    .detail .viewbox .txt .user_act .user_post .delete {height:45px; padding:4px 12px 0 7px; font-size:0;}
+    .detail .viewbox .txt .user_act .user_post .delete:after {font-size:25px;}
+
+    .detail .viewbox .txt .review_list li .review_txt {width:80%; font-size:13px;}
+    .detail .viewbox .txt .review_list li .review_txt .btn_comment{width:65px;}
+    .detail .viewbox .txt .review_list li .review_img {width:50%; max-width:100%;}
+    .detail .viewbox .txt .review_list li .review_img img {width:100%;}
+    .detail .viewbox .txt .review_form {padding-top:60px;}
+    .detail .viewbox .txt .review_form .set_review textarea {width:80%; padding:10px 40px 10px 10px;}
+    .detail .viewbox .txt .review_form .set_review .btn_comment {width:15%; height:80px; background-size:30px 18px;}
+    .detail .viewbox .txt .review_form .set_review .insert_img a.btn_file_comment {width:13%;}
+    .detail .viewbox .txt .review_form .set_review .count_txt {right:23%;}
+
+    .detailview h4 {font-size: 20px; padding-bottom:5px; width:56%;}
+    .detailview .imagebox img {max-width:80%;}
+    .detailview .close_popupB { top:-10px; right:20px; width:50px; height:50px;}
+
+    .posting_area {overflow-y:auto;}
+    .posting {background-position:-55px 430px; background-size:335px 45px;}
+    .posting .add {padding-bottom:10px;}
+    .posting h4 {font-size:30px;}
+    .posting .txtbox .info li label {width:20%; height:40px; margin-right:1%; padding:12px 0 0 1.5%; font-size:11px;}
+    .posting .txtbox .info li input {width:78%; height:40px;}
+    .posting .txtbox .info li textarea {width:78%; height:162px;}
+    .posting .txtbox .info li select {width:78% !important;}
+    .posting .txtbox .info li div.hashtag {width:78% !important;margin-right: 2px;}
+    .posting .txtbox .info li:nth-child(2) label {height:163px;}
+    .posting .txtbox .info li .input_file {width:58%;}
+    .posting .txtbox .info li .btn_file {width:20%; height:40px; font-size:13px; line-height:275%;}
+    .posting .txtbox .submit_preview {width:55%; padding:13px 0;}
+    .posting_area .close_popupB {position:absolute; top:-15px; right:0; overflow:hidden;}
+    .posting_area .close_popupB img {margin-right:-5px; width:70%; height:auto;}
+
+}
+@media screen and (max-width: 375px) {
+    .search .input_style_search.active {width:80%; padding:0 6%;}
+    .preview .prebox .photo {min-height:175px;}
+    .preview .prebox .photo .photoimage img {max-width:180px;}
+    .preview .btn_area img {width:80%;}
+    .posting_area .close_popupB {top:-5px;}
+    .detail .viewbox .txt .review_list li .review_txt .btn_comment{width:50px;}
+}

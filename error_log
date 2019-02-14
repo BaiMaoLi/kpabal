@@ -1,0 +1,1 @@
+[13-Feb-2019 19:18:44 UTC] PHP Fatal error:  require(): Failed opening required 'APPPATHHlibraries/Format.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home1/kpabalco/public_html/application/controllers/Lottery.php on line 9

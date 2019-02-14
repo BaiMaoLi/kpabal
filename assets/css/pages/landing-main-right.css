@@ -1,0 +1,149 @@
+.total-list {
+	float: right;
+	width: 100%;
+    float: right;
+    margin-left: 1px;
+    border-style: groove;
+    border-color: rgba(237, 237, 237,0.2);
+    height: auto;
+}
+
+.total-list .week-brief-tabs{
+    background: #eee;
+}
+
+
+a{
+	text-decoration: none;
+}
+.side-container{
+	margin:0 0 0 0!important;
+	padding: 0 0 0 !important;
+}
+
+.total-list a {
+	padding: 0 0 0 0!important;
+}
+
+/*.total-list ul li a:hover{*/
+/*	color: rgba(0, 0, 0);*/
+/*	font-weight: bolder;*/
+/*}*/
+
+
+/*.total-list .nav-tabs .nav-item{*/
+/*    color: rgb(119, 209, 141);   */
+/*}*/
+
+.week-subtitle .truncated:hover{
+    background-color: #eee;
+    color: #000;
+}
+
+.nav .nav-tabs:hover{
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+.total-list .tab-content {
+	height:375px!important;
+	border-color: rgb(188, 188, 188);
+}
+.tab-content ul li a span {
+	display: block;
+	margin: 1px 0 0 0;
+	font-size: 12px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	padding-left:5px;
+	/*text-align: center;*/
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+.scroll-hidden {
+	overflow: hidden;
+}
+
+/*.tab-content ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: none !important;
+}
+*/
+
+
+.tab-content ul li i {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-left: 10px;
+	color: #111;
+}
+
+.nav-item a h6 {
+	font-weight: 300%;
+	margin-top:0;
+}
+
+.nav-item a h6.weekday{
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+
+.nav-item a:hover h6.weekday{
+    color: #000 !important;
+}
+
+.nav-item a.active h6.weekday{
+    color: #000;
+}
+
+.nav-item a h6.week-date{
+    font-size: 12px;
+    font-weight: 200;
+    color: #777;
+}
+
+.nav-item a:hover h6.week-date{
+    color: #000 !important;
+}
+
+.nav-item a.active h6.week-date{
+    color: #000;
+}
+/*.nav-item a h5 {
+
+	font-size: 15px;
+
+}*/
+.list-region{
+  margin:0 0 0 0;
+  width: 80%;
+  position: relative;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+	.tab-content ul {
+	  columns: 2;
+	  -webkit-columns: 2;
+	  -moz-columns: 2;
+	  list-style-type: none !important;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	.tab-content ul {
+	  columns: 1;
+	  -webkit-columns: 1;
+	  -moz-columns: 2;
+	  list-style-type: none !important;
+	}
+
+}

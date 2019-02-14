@@ -1,0 +1,122 @@
+@media (max-width: 1200px) 
+{   
+    .md-container .md-main:before
+    {
+        display: none;
+    }
+    ::-webkit-scrollbar {
+        width: .4rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,.26)
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #536dfe
+    }
+    .md-header
+    {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-align: center;
+            -webkit-box-align: center;
+                align-items: center;
+    }
+    .md-grid
+    {
+        width: 100%;
+    }
+    .nav_wrapper
+    {
+        z-index: 10;
+        top: 71px;
+        width: 0px;
+        overflow: visible;
+        /*pointer-events: none;*/
+    }
+    .nav_wrapper>.md-sidebar
+    {
+        /*z-index: 10;*/
+    }
+    .md-typeset .md-typeset__table
+    {
+        /*width: 100%;*/
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow-x: scroll;
+        border-radius: .2rem;
+    }
+    .md-typeset .md-typeset__table>table
+    {
+        width: auto;
+        margin-left: 0px;
+    }
+    #response~*+.response-tabs table
+    {
+        /*width: 100%;*/
+        margin-right: 0px;
+    }
+    #response~*+.response-tabs .response-tabs-content>.md-typeset__table th
+    {
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .md-typeset pre
+    {
+        width: 100%;
+        margin: 0px;
+        overflow-x: scroll;
+    }
+    .md-typeset pre code
+    {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        word-break: keep-all;
+        box-sizing: content-box;
+        padding-right: 10px;
+    }
+    .md-sidebar--primary
+    {
+         left: calc(-50vw - 172px); 
+    }
+    [data-md-toggle=drawer]:checked~.md-container .md-sidebar--primary
+    {
+        -ms-transform: translateX(172px);
+            -webkit-transform: translateX(172px);
+                transform: translateX(172px);
+        height: calc(100vh - 72px) !important;
+    }
+    .md-sidebar.md-sidebar--secondary
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 330px)  and (min-width: 310px)
+{
+	.nav-links>li
+	{
+        margin-left: 6px;
+        font-size: 12px;
+	}
+}
+@media (max-width: 380px) and (min-width: 340px)
+{
+	.nav-links>li
+	{
+        margin-left: 15px;
+        font-size: 14px;
+	}
+}
+@media (max-width: 420px) and (min-width: 400px)
+{
+	.nav-links>li
+	{
+        margin-left: 20px;
+        font-size: 15px;
+	}
+}

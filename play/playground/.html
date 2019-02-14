@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html class="js">
+    
+<!-- Mirrored from api.tecalliance.net.cn/en/playground/. by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Sep 2018 12:34:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.0.5">
+        <link rel="shortcut icon" href="img/favicon.jpg">
+        <title>TecAlliance TecDoc playground</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="library/jstree/themes/default/style.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/roboto.css">
+        <link rel="stylesheet" href="../assets/stylesheets/icon-material.css">
+        <link rel="stylesheet" type="text/css" href="css/all9899.css?V11">
+        <style>
+
+        </style>
+        </head>
+        <body>
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+          <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+          <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+          <header class="md-header">
+              <nav class="md-header-nav md-grid">
+                  <div class="md-flex">
+                      <div class="md-flex__cell md-flex__cell--shrink">
+                          <a href="../index.html" title="TecAlliance TecDoc API documentation" class=" md-logo  md-header-nav__button">
+                              <img src="../images/tecalliance_logo_250px.jpg" height="37">
+                          </a>
+                      </div>
+                      <div class="md-flex__cell md-flex__cell--stretch">
+                          <ul class="nav-links">
+                              <li ><a href="../introduction/index.html">Documentation</a></li>
+
+                              <li class="active"><a href="javascript:;" class="playground">Playground</a></li>
+                              <li><a href="../contact.html">Contact</a></li>
+                          </ul>
+                      </div>
+
+                  </div>
+              </nav>
+          </header>
+          <div class="hidden" style="display: none;">
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" style="display: none;" data-md-state="lock">
+                  <div class="md-sidebar__scrollwrap">
+                      <div class="md-sidebar__inner">
+                          <nav class="md-nav md-nav--primary">
+                              <label class="md-nav__title md-nav__title--site" for="drawer"><i class=" md-logo  md-nav__button"><img src="../images/tecalliance_logo_250px.jpg"></i></label>
+                              <ul class="md-nav__list" data-md-scrollfix="">
+                                  <li class="md-nav__item"><input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc"><a href=".html" title="Index" class="md-nav__link md-nav__link--active">Index</a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+              <div data-md-component="toc"></div>
+          </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 column_left">
+                    <h2 class="column_title">Filter criteria</h2>
+                    <div class="search">
+                        <h2>Number search</h2>
+                        <input type="text" name="search" class="search" value=""><button class="su">Submit</button>
+                        <select class="numberType">
+                            <option value="0">Article number</option>
+                            <option value="1">OE number</option>
+                            <option value="2">Trade number</option>
+                            <option value="3">Comparable number</option>
+                            <option value="4">Replacement number</option>
+                            <option value="5">Replaced number</option>
+                            <option value="6">EAN number</option>
+                            <option value="10" selected>Any number</option>
+                        </select>
+                    </div>
+                    <div class="vehicle_selection">
+                        <h2>Vehicle</h2>
+                        <select class="manufacturers" disabled>
+                            <option value="">- Select Manufacturer -</option>
+                        </select><span></span>
+                        <select class="modell" disabled>
+                            <option value="">- Select Model -</option>
+                        </select><span></span>
+                        <select class="vehicle" disabled>
+                            <option value="">- Select Vehicle -</option>
+                        </select><span></span>
+                    </div>
+                    <div class="vin">
+                        <h2>VIN number search</h2>
+                        <input type="text" name="vin" class="search" value=""><button class="su">Submit</button>
+                    </div>
+                    <div class="hsn_tsn" style="display:none">
+                        <h2>Search by KBA-Nr.</h2>
+                        <table>
+                            <tr>
+                                <td>zu 2.1 / zu 2</td>
+                                <td>zu 2.2 / zu 3</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="hsn" class="hsn" maxlength="4"></td>
+                                <td><input type="text" name="hsn" class="tsn" maxlength="3"></td>
+                                <td><button>Send</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="brand_selection">
+                        <h2>Brands</h2>
+                        <select class="brands" disabled>
+                            <option value="">- Select Brand -</option>
+                        </select><span></span>
+                    </div>
+                    <div class="assemblyGroup">
+                        <h2>Assembly group</h2>
+                        <div class="tree">
+                            <span class="loading"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5 column_middle">
+                    <div class="totalnumber"></div>
+                    <h2 class="column_title">Result</h2>
+                    <div class="result"><div class="alert alert-warning" role="alert">Please select an option from the left side!</div></div>
+                </div>
+                <div class="col-md-4 column_right">
+
+                	<h2 class="column_title">API FUNCTION CALL IN JSON</h2>
+                	<div class="code">
+                		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"></div>
+                	</div>
+
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="modal_tecdoc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Vehicle linkage</h4>
+                  </div>
+                  <div class="modal-body">
+                    <span class="load"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer style="height:65px;">
+           <div class="md-typeset index" style="height:65px;overflow:hidden">
+             <div class="md-footer-meta__inner md-grid">
+               <div class="md-footer-translate md-footer-translate-left">
+                 <ul>
+                   <li>
+                     <a href="http://api.tecalliance.net.cn/zh/playgrounds" >中文</a>
+                   </li>
+                   <li>
+                     <a href="../playgrounds/index.html" class="active">English</a>
+                   </li>
+                 </ul>
+               </div>
+               <div class="md-footer-copyright md-footer-copyright-right">Copyright © 2017 TecAlliance Asia &nbsp;&nbsp;|&nbsp;&nbsp; 沪ICP备16054861号</div>
+             </div>
+           </div>
+        </footer>
+         <div class="blank-pop-up">
+            <div class="wrapper">
+                 <div class="erroricon">
+                    <span class="left">
+                        <span class="icon">
+                          <img src="../images/warning.png">
+                        </span> ERROR
+                    </span>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="message"><p>Please input the right Provider ID</p></div>
+                <a id="closeBtn">
+                    OK
+                </a>
+            </div>
+         </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="library/jstree/jstree.min.js"></script>
+        <script src="js/allc42a.js?V18"></script>
+    </body>
+
+<!-- Mirrored from api.tecalliance.net.cn/en/playground/. by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Sep 2018 12:34:40 GMT -->
+</html>

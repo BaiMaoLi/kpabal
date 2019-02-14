@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+    <title xml:lang="ko">쪽지 알람 애드온</title>
+    <description xml:lang="ko">
+        읽지않은 쪽지를 알려주는 애드온
+    </description>
+    <version>1.0.1.0</version>
+    <date>2012-05-02</date>
+
+    <author email_address="soonj@nate.com" link="http://backupxe.com/">
+        <name xml:lang="ko">카르마</name>
+    </author>
+	<extra_vars>
+		<var name="mode" type="select">
+            <title xml:lang="ko">알람 방식</title>
+            <description xml:lang="ko">확인알람을 설정하는 경우 확인을 클릭하면 쪽지읽기로 이동됩니다.</description>
+            <options value="">
+                <title xml:lang="ko">단순알람</title>
+			</options>
+            <options value="confirm">
+                <title xml:lang="ko">확인알람</title>
+            </options>
+			<options value="layer">
+                <title xml:lang="ko">레이어방식</title>
+            </options>
+        </var>
+	</extra_vars>
+</addon>
